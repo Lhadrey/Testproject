@@ -12,7 +12,7 @@ class RegistrationController extends Controller
     public function register()
     {
         $Registration_txt = "welcome to registration page";
-        //something;
+        //comment;
         $response = RoleModel::where("status", "active")->get();
         return view("register")->with(compact("response"));
     }
